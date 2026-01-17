@@ -14,7 +14,7 @@ const HeroComments = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       variants={slideInFromTop}
-      className="flex flex-col md:flex-row px-6 md:px-20 mt-10 md:mt-20 w-full z-10 justify-between items-center gap-10"
+      className="flex flex-col md:flex-row px-6 md:px-20 mt-10 md:mt-20 w-full z-10 justify-between items-center gap-10 h-auto md:h-150"
     >
       {/* Texte à gauche */}
       <div className="flex flex-col top-60 gap-5 w-full md:w-1/2 max-w-3xl text-start">

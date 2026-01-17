@@ -10,7 +10,7 @@ const Stars = (props: any) => {
 
   // Génère 5000 points valides dans une sphère
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.2 })
+    random.inSphere(new Float32Array(5000*3), { radius: 1.2 })
   )
 
   useFrame((state, delta) => {
