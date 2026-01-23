@@ -49,13 +49,18 @@ export const Backend_skill = [
 
 // --- Full Stack / Outils ---
 export const Full_stack = [
-  { skill_name: "React Native", icon: <FaReact className="text-cyan-400 w-10 h-10" /> },
+  
   { skill_name: "Figma", icon: <SiFigma className="text-pink-500 w-10 h-10" /> },
   { skill_name: "WordPress", icon: <SiWordpress className="text-blue-500 w-10 h-10" /> },
   { skill_name: "Vercel", icon: <SiVercel className="text-white w-10 h-10" /> },
   { skill_name: "Render", icon: <SiRender className="text-purple-500 w-10 h-10" /> },
   { skill_name: "GitHub", icon: <FaGithub className="text-white w-10 h-10" /> },
   { skill_name: "Trello", icon: <FaTrello className="text-blue-400 w-10 h-10" /> },
+  
+]
+
+export const Tools = [
+  { skill_name: "React Native", icon: <FaReact className="text-cyan-400 w-10 h-10" /> },
   { skill_name: "Teams", icon: <FaTeamspeak className="text-blue-600 w-10 h-10" /> },
 ]
 

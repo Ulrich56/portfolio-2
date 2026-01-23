@@ -1,5 +1,5 @@
 "use client"
-import { Backend_skill, Frontend_skill, Full_stack } from "@/constants"
+import { Backend_skill, Frontend_skill, Full_stack, Tools } from "@/constants"
 import React from "react"
 import SkillDataProvider from "../sub/SkillDataProvider"
 import MatrixBackground from "../sub/MatrixBackground"
@@ -16,10 +16,22 @@ const Skills = () => {
       </div>
     <section
       id="skills"
-      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-15"
+      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden 
+     pb-40 py-15 lg:pb-80"
       style={{ transform: "scale(0.9)" }}
     >
+      <div className='w-[80%] flex items-start justify-center absolute'>
+        <video 
+        loop 
+        autoPlay 
+        muted
+        playsInline
+        preload='false'
+        className='w-full h-auto'
+        src="/encryption.webm"/>
 
+      </div>
+      
       {/* Backend */}
       <div className="flex flex-row justify-around flex-wrap mt-2 gap-5 items-center relative z-10">
         {Backend_skill.map((skill, index) => (
@@ -37,6 +49,12 @@ const Skills = () => {
       {/* Full stack */}
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center relative z-10">
         {Full_stack.map((skill, index) => (
+          <SkillDataProvider key={index} icon={skill.icon} index={index} />
+        ))}
+      </div>
+
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center relative z-10">
+        {Tools.map((skill, index) => (
           <SkillDataProvider key={index} icon={skill.icon} index={index} />
         ))}
       </div>
